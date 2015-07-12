@@ -62,7 +62,7 @@
 <wire x1="-16" y1="9.05" x2="-16" y2="-9.05" width="0.127" layer="21"/>
 <wire x1="-16" y1="-9.05" x2="16" y2="-9.05" width="0.127" layer="21"/>
 <wire x1="16" y1="-9.05" x2="16" y2="9.05" width="0.127" layer="21"/>
-<wire x1="16" y1="9.05" x2="-16" y2="9.05" width="0.127" layer="21"/>
+<wire x1="16" y1="9.05" x2="-16" y2="9.05" width="0.127" layer="25"/>
 <pad name="1" x="-13.97" y="-7.62" drill="0.8"/>
 <pad name="2" x="-11.43" y="-7.62" drill="0.8"/>
 <pad name="3" x="-8.89" y="-7.62" drill="0.8"/>
@@ -87,7 +87,8 @@
 <pad name="22" x="-8.89" y="7.62" drill="0.8" rot="R180"/>
 <pad name="23" x="-11.43" y="7.62" drill="0.8" rot="R180"/>
 <pad name="24" x="-13.97" y="7.62" drill="0.8" rot="R180"/>
-<text x="-5.08" y="0" size="1.27" layer="21">AE-UM232R</text>
+<text x="-5.08" y="0" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-15.24" y="10.16" size="1.27" layer="21">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -96,7 +97,7 @@
 <wire x1="-12.7" y1="-15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-15.24" x2="12.7" y2="17.78" width="0.254" layer="94"/>
 <wire x1="12.7" y1="17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
-<text x="-7.62" y="-18.288" size="1.778" layer="95">AE-UM232R</text>
+<text x="-7.62" y="-18.288" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="17.78" y="15.24" length="middle" direction="pwr" rot="R180"/>
 <pin name="CB0" x="17.78" y="12.7" length="middle" rot="R180"/>
 <pin name="CB1" x="17.78" y="10.16" length="middle" rot="R180"/>
@@ -121,10 +122,11 @@
 <pin name="CTS#" x="-17.78" y="-7.62" length="middle"/>
 <pin name="CB4" x="-17.78" y="-10.16" length="middle"/>
 <pin name="CB2" x="-17.78" y="-12.7" length="middle"/>
+<text x="-11.43" y="19.558" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="AE-UM232R">
+<deviceset name="AE-UM232R" prefix="IC">
 <description>FT232RL USB-Serial Converter - AE-UM232R</description>
 <gates>
 <gate name="G$1" symbol="AE-UM232R" x="0" y="0"/>
