@@ -124,7 +124,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ADXL213">
+<deviceset name="ADXL213" prefix="IC">
 <description>&lt;b&gt;Low-Cost  +-2 g Dual-Axis Accelerometer&lt;/b&gt; with Duty Cycle Output&lt;p&gt;
 Source: http://www.analog.com/media/en/technical-documentation/data-sheets/ADXL213.pdf</description>
 <gates>
