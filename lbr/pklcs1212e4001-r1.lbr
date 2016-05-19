@@ -95,7 +95,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PKLCS1212E4001">
+<deviceset name="PKLCS1212E4001" prefix="SP">
 <gates>
 <gate name="G$1" symbol="PKLCS1212E4001" x="0" y="0"/>
 </gates>
