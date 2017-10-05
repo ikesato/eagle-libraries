@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -614,11 +614,11 @@
 <pin name="(PCI5/SCK)PB5" x="27.94" y="-30.48" length="middle" rot="R180"/>
 <pin name="PB7(XTAL2/TOSC2/PCI7)" x="-27.94" y="7.62" length="middle"/>
 <pin name="PB6(XTAL1/TOSC1/PCI6)" x="-27.94" y="12.7" length="middle"/>
-<pin name="GND" x="-27.94" y="0" length="middle"/>
-<pin name="VCC" x="-27.94" y="-5.08" length="middle"/>
-<pin name="AGND" x="-27.94" y="25.4" length="middle"/>
+<pin name="GND" x="-27.94" y="-5.08" length="middle"/>
+<pin name="VCC" x="-27.94" y="0" length="middle"/>
+<pin name="AGND" x="-27.94" y="20.32" length="middle"/>
 <pin name="AREF" x="-27.94" y="22.86" length="middle"/>
-<pin name="AVCC" x="-27.94" y="20.32" length="middle"/>
+<pin name="AVCC" x="-27.94" y="25.4" length="middle"/>
 <pin name="(PCI4/MISO)PB4" x="27.94" y="-27.94" length="middle" rot="R180"/>
 <pin name="(PCI3/MOSI/OC2A)PB3" x="27.94" y="-25.4" length="middle" rot="R180"/>
 <pin name="(PCI2/SS/OC1B)PB2" x="27.94" y="-22.86" length="middle" rot="R180"/>
@@ -650,11 +650,11 @@
 <pin name="(PCI5/SCK)PB5" x="27.94" y="-30.48" length="middle" rot="R180"/>
 <pin name="PB7(XTAL2/TOSC2/PCI7)" x="-27.94" y="7.62" length="middle"/>
 <pin name="PB6(XTAL1/TOSC1/PCI6)" x="-27.94" y="12.7" length="middle"/>
-<pin name="GND" x="-27.94" y="0" length="middle"/>
-<pin name="VCC" x="-27.94" y="-10.16" length="middle"/>
-<pin name="AGND" x="-27.94" y="25.4" length="middle"/>
+<pin name="GND" x="-27.94" y="-12.7" length="middle"/>
+<pin name="VCC" x="-27.94" y="0" length="middle"/>
+<pin name="AGND" x="-27.94" y="20.32" length="middle"/>
 <pin name="AREF" x="-27.94" y="22.86" length="middle"/>
-<pin name="AVCC" x="-27.94" y="20.32" length="middle"/>
+<pin name="AVCC" x="-27.94" y="25.4" length="middle"/>
 <pin name="(PCI4/MISO)PB4" x="27.94" y="-27.94" length="middle" rot="R180"/>
 <pin name="(PCI3/MOSI/OC2A)PB3" x="27.94" y="-25.4" length="middle" rot="R180"/>
 <pin name="(PCI2/SS/OC1B)PB2" x="27.94" y="-22.86" length="middle" rot="R180"/>
@@ -675,8 +675,8 @@
 <pin name="(PCI9/ADC1)PC1" x="27.94" y="27.94" length="middle" rot="R180"/>
 <pin name="(PCI8/ADC0)PC0" x="27.94" y="30.48" length="middle" rot="R180"/>
 <pin name="PC6(/RESET/PCI14)" x="-27.94" y="30.48" length="middle" function="dot"/>
-<pin name="GND1" x="-27.94" y="-5.08" length="middle"/>
-<pin name="VCC1" x="-27.94" y="-15.24" length="middle"/>
+<pin name="GND1" x="-27.94" y="-17.78" length="middle"/>
+<pin name="VCC1" x="-27.94" y="-5.08" length="middle"/>
 <pin name="ADC7" x="-27.94" y="-30.48" length="middle"/>
 <pin name="ADC6" x="-27.94" y="-25.4" length="middle"/>
 </symbol>
