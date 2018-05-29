@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -23,7 +23,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
@@ -97,6 +97,23 @@
 <text x="-7.62" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 <text x="9.144" y="-10.16" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
+<package name="ZX62B5PA">
+<smd name="GND" x="-1.299971875" y="4.124875" dx="1.350009375" dy="0.40005" layer="1" rot="R90"/>
+<smd name="ID" x="-0.650240625" y="4.124875" dx="1.350009375" dy="0.40005" layer="1" rot="R90"/>
+<smd name="D+" x="0" y="4.124875" dx="1.350009375" dy="0.40005" layer="1" rot="R90"/>
+<smd name="D-" x="0.650240625" y="4.124875" dx="1.350009375" dy="0.40005" layer="1" rot="R90"/>
+<smd name="VBUS" x="1.299971875" y="4.124875" dx="1.350009375" dy="0.40005" layer="1" rot="R90"/>
+<smd name="SLD4" x="-1.199896875" y="1.45" dx="1.89991875" dy="1.89991875" layer="1"/>
+<smd name="SLD5" x="1.199896875" y="1.45" dx="1.89991875" dy="1.89991875" layer="1"/>
+<wire x1="-3.899915625" y1="0" x2="3.899915625" y2="0" width="0.127" layer="51"/>
+<wire x1="-3.899915625" y1="0" x2="-3.899915625" y2="4.371" width="0.127" layer="51"/>
+<wire x1="-3.899915625" y1="4.371" x2="3.899915625" y2="4.371" width="0.127" layer="51"/>
+<wire x1="3.899915625" y1="0" x2="3.899915625" y2="4.371" width="0.127" layer="51"/>
+<pad name="SLD3" x="-3.999990625" y="1.45" drill="1.4986" diameter="2.032" shape="square"/>
+<pad name="SLD6" x="3.999990625" y="1.45" drill="1.4986" diameter="2.032" shape="square"/>
+<pad name="SLD1" x="-3.175" y="4.191" drill="1.4986" diameter="2.032" shape="square"/>
+<pad name="SLD2" x="3.175" y="4.191" drill="1.4986" diameter="2.032" shape="square"/>
+</package>
 </packages>
 <symbols>
 <symbol name="4PIN">
@@ -159,6 +176,25 @@
 <pin name="S1" x="0" y="-7.62" visible="off" length="short" direction="pas"/>
 <pin name="S2" x="0" y="-10.16" visible="off" length="short" direction="pas"/>
 </symbol>
+<symbol name="MICRO">
+<pin name="VBUS" x="12.7" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="D-" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="D+" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="ID" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="GND" x="12.7" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="SHIELD" x="12.7" y="-10.16" length="middle" swaplevel="1" rot="R180"/>
+<wire x1="7.62" y1="12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<text x="-5.08" y="10.16" size="1.778" layer="94">Micro USB</text>
+<text x="-6.35" y="13.97" size="1.778" layer="95">&gt;NAME</text>
+<pin name="SHIELD2" x="12.7" y="-10.16" visible="off" length="point" swaplevel="1" rot="R180"/>
+<pin name="SHIELD3" x="12.7" y="-10.16" visible="off" length="point" swaplevel="1" rot="R180"/>
+<pin name="SHIELD4" x="12.7" y="-10.16" visible="off" length="point" swaplevel="1" rot="R180"/>
+<pin name="SHIELD6" x="12.7" y="-10.16" visible="off" length="point" swaplevel="1" rot="R180"/>
+<pin name="SHIELD5" x="12.7" y="-10.16" visible="off" length="point" swaplevel="1" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TYPE-A-MALE" prefix="USB" uservalue="yes">
@@ -219,6 +255,31 @@
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MICRO-USB" prefix="USB">
+<gates>
+<gate name="G$1" symbol="MICRO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ZX62B5PA">
+<connects>
+<connect gate="G$1" pin="D+" pad="D+"/>
+<connect gate="G$1" pin="D-" pad="D-"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="ID" pad="ID"/>
+<connect gate="G$1" pin="SHIELD" pad="SLD1"/>
+<connect gate="G$1" pin="SHIELD2" pad="SLD2"/>
+<connect gate="G$1" pin="SHIELD3" pad="SLD3"/>
+<connect gate="G$1" pin="SHIELD4" pad="SLD4"/>
+<connect gate="G$1" pin="SHIELD5" pad="SLD5"/>
+<connect gate="G$1" pin="SHIELD6" pad="SLD6"/>
+<connect gate="G$1" pin="VBUS" pad="VBUS"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
