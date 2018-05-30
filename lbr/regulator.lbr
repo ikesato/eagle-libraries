@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="25" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -22,14 +22,14 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
@@ -58,25 +58,59 @@
 <library>
 <packages>
 <package name="NJM2884-SOT-89-5">
-<smd name="2_1" x="0" y="1.85" dx="1" dy="1.5" layer="1"/>
-<smd name="2" x="0" y="-1.85" dx="1" dy="1.5" layer="1"/>
-<smd name="2_3" x="0" y="0.4" dx="1.41" dy="1.41" layer="1" rot="R45" cream="no"/>
-<smd name="2_6" x="0" y="-0.4" dx="1.41" dy="1.41" layer="1" rot="R45" cream="no"/>
 <smd name="5" x="-1.5" y="1.85" dx="0.7" dy="1.5" layer="1"/>
 <smd name="1" x="-1.5" y="-1.85" dx="0.7" dy="1.5" layer="1"/>
 <smd name="3" x="1.5" y="-1.85" dx="0.7" dy="1.5" layer="1"/>
 <smd name="4" x="1.5" y="1.85" dx="0.7" dy="1.5" layer="1"/>
-<smd name="2_2" x="0" y="0.9" dx="1" dy="0.5" layer="1" cream="no"/>
-<smd name="2_7" x="0" y="-0.9" dx="1" dy="0.5" layer="1" cream="no"/>
-<smd name="2_4" x="-0.6" y="0" dx="0.8" dy="0.8" layer="1" cream="no"/>
-<smd name="2_5" x="0.6" y="0" dx="0.8" dy="0.8" layer="1" cream="no"/>
-<smd name="2_0" x="0" y="0" dx="0.8" dy="0.8" layer="1"/>
+<smd name="2" x="0" y="0" dx="2" dy="1.2" layer="1"/>
 <wire x1="-2.5" y1="3" x2="2.5" y2="3" width="0.2032" layer="25"/>
 <wire x1="2.5" y1="3" x2="2.5" y2="-3" width="0.2032" layer="25"/>
 <wire x1="2.5" y1="-3" x2="-2.5" y2="-3" width="0.2032" layer="25"/>
 <wire x1="-2.5" y1="-3" x2="-2.5" y2="3" width="0.2032" layer="25"/>
 <text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
+<polygon width="0.1524" layer="1">
+<vertex x="0.5" y="-2.6"/>
+<vertex x="0.5" y="-1.1"/>
+<vertex x="1" y="-0.6"/>
+<vertex x="1" y="0.6"/>
+<vertex x="0.5" y="1.1"/>
+<vertex x="0.5" y="2.6"/>
+<vertex x="-0.5" y="2.6"/>
+<vertex x="-0.5" y="1.1"/>
+<vertex x="-1" y="0.6"/>
+<vertex x="-1" y="-0.6"/>
+<vertex x="-0.5" y="-1.1"/>
+<vertex x="-0.5" y="-2.6"/>
+</polygon>
+<polygon width="0.1524" layer="31">
+<vertex x="0.5" y="-2.6"/>
+<vertex x="0.5" y="-1.1"/>
+<vertex x="1" y="-0.6"/>
+<vertex x="1" y="0.6"/>
+<vertex x="0.5" y="1.1"/>
+<vertex x="0.5" y="2.6"/>
+<vertex x="-0.5" y="2.6"/>
+<vertex x="-0.5" y="1.1"/>
+<vertex x="-1" y="0.6"/>
+<vertex x="-1" y="-0.6"/>
+<vertex x="-0.5" y="-1.1"/>
+<vertex x="-0.5" y="-2.6"/>
+</polygon>
+<polygon width="0.3524" layer="29">
+<vertex x="0.5" y="-2.6"/>
+<vertex x="0.5" y="-1.1"/>
+<vertex x="1" y="-0.6"/>
+<vertex x="1" y="0.6"/>
+<vertex x="0.5" y="1.1"/>
+<vertex x="0.5" y="2.6"/>
+<vertex x="-0.5" y="2.6"/>
+<vertex x="-0.5" y="1.1"/>
+<vertex x="-1" y="0.6"/>
+<vertex x="-1" y="-0.6"/>
+<vertex x="-0.5" y="-1.1"/>
+<vertex x="-0.5" y="-2.6"/>
+</polygon>
 </package>
 </packages>
 <symbols>
@@ -102,7 +136,7 @@
 <device name="" package="NJM2884-SOT-89-5">
 <connects>
 <connect gate="G$1" pin="CONTROL" pad="1"/>
-<connect gate="G$1" pin="GND" pad="2_1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="VIN" pad="5"/>
 <connect gate="G$1" pin="VOUT" pad="4"/>
 </connects>
